@@ -525,6 +525,34 @@ span.CodeMirror-selectedtext {
   text-decoration: underline;
   color: white !important;
 }
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  border: 1px solid silver;
+  background: white;
+  font-size: 90%;
+  font-family: monospace;
+  max-height: 20em;
+  overflow-y: auto;
+}
+.CodeMirror-hint {
+  margin: 0;
+  padding: 0 4px;
+  border-radius: 2px;
+  white-space: pre;
+  color: black;
+  cursor: pointer;
+}
+li.CodeMirror-hint-active {
+  background: #135589;
+  color: white;
+}
 .flex-row, body {
   display: flex;
   flex-direction: row;
@@ -573,6 +601,69 @@ a:hover {
 }
 h1 {
   text-align: center;
+}
+input.wrong {
+  outline-color: #dd0000;
+}
+.popup {
+  background: #fff;
+  /* margin: auto; */
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: fixed;
+  z-index: 11;
+  top: 20px;
+  border: solid 2px #135589;
+  border-radius: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  padding: 30px;
+  opacity: 0.98;
+  box-shadow: 3px 4px 20px -10px;
+}
+.popup > button {
+  background: #dd0000;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.contrast-btn {
+  color: #fff;
+  background-color: #135589;
+  padding: 10px 15px;
+}
+.disabled-contrast-btn {
+  color: #e0e0e0;
+  background-color: #585858;
+  cursor: not-allowed;
+}
+img.float-l {
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+img.xs {
+  width: 100px;
+}
+img.s {
+  width: 200px;
+}
+img.m {
+  width: 300px;
+}
+img.l {
+  width: 400px;
+}
+img.xl {
+  width: 500px;
 }
 
 /*# sourceMappingURL=styles.css.map*/
